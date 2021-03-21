@@ -15,7 +15,7 @@ const chainMaker = {
   removeLink(position) {
     if (typeof position !== "number" || position - 1 > this.getLength() || position - 1 < 0) {
       this.chain = [];
-      throw new CustomError("Position is not valid");
+      throw new Error("Position is not valid");
     }
     this.chain.splice(position - 1, 1);
     return this;
