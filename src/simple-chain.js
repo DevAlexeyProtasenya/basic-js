@@ -25,7 +25,7 @@ const chainMaker = {
     this.chain.reverse();
     return this;
   },
-  
+
   finishChain() {
     let result = "";
     if (this.getLength() === 1) {
